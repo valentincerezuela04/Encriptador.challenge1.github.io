@@ -1,0 +1,125 @@
+body{
+    background-color:  #f3f5fc;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    
+    
+}
+
+
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 5%;
+    padding-left: 12%;
+} 
+
+textarea {
+    width: 100%; /* El textarea ocupa el 100% del ancho del contenedor */
+    height: 100px; /* Altura fija del textarea (puedes ajustar según tus necesidades) */
+    box-sizing: border-box;
+    resize: none; /* Evita que el usuario redimensione el textarea */
+  }
+
+
+
+#miInput{
+    background-color:  #f3f5fc;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    font-size: 2rem;
+    color: #0A3871;
+    height: 450px;
+    
+}
+#w3review{
+    font-size: 1rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}
+.section-right{
+    background-color: white;
+    border-color: blue;
+    border-radius: 25px;
+    width: auto;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px 5px #757FB2;
+    margin: 0px 0px 20px 0px;
+}
+
+.section-right > h2 {
+    padding: 30px;
+}
+
+
+
+button{
+    background-color: white;
+    color:#0A3871;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: 5px;
+    transition: 0.5s;
+    margin-top: 30px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 5px #757FB2;
+}
+button:hover {
+    background-color: #0A3871;
+    color: white;
+    border-color: #0A3871;
+}
+
+.exclamation-logo{
+    font-size: small;
+    
+}
+
+#button1{
+    background-color: #0A3871;
+    color: white;
+}
+
+#button1:hover {
+    background-color: white;
+    color: #0A3871;
+    border-color: #0A3871;
+}
+
+#copyButton{
+    background-color: #0A3871;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+#copyButton:hover {
+    background-color: white;
+    color: #0A3871;
+    border-color: #0A3871;
+}
+
+@media (max-width: 1000px) {
+    .section-right > img {
+      display: none; /* Oculta la imagen cuando el ancho de la pantalla es 600px o menos */
+      
+    }
+}
+
+ @media screen and (max-width: 600px) {
+    .conteiner{
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+    
+ }

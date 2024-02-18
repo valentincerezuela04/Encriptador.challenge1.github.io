@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://kit.fontawesome.com/46f68ec44e.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Libre+Baskerville&family=Roboto&display=swap" rel="stylesheet">
+    <header>
+        <h1><img src="img/Logo.png" alt="logo"></h1>
+    </header>
+</head>
+<body>
+   <div class="conteiner">
+
+    
+        <div class="input">
+            <textarea name="" id="miInput" cols="32" rows="150" placeholder="Ingrese el texto aqui"></textarea>
+        </div>
+        
+        
+        <div class="section-right">
+            <textarea id="w3review" name="w3review" rows="10" cols="45" style="display: none;"></textarea>
+            <button id="copyButton" onclick="copyClipboard()" style="display: none;"> <i class="fa-regular fa-copy"></i></button>
+            <img src="img/Muñeco.png" alt="not found" id="clear-img">
+            <h2 id="clear-h2">Ningun mensaje fue encontrado</h2>
+            <p id="clear-p">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        
+        <div class="buttons">
+            <div class="exclamation-logo">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                    Solo letras minusculas y sin acentos
+                </i>
+                
+            </div>
+            
+            <button onclick="encriptador()" id="button1">Encriptar</button>
+            <button onclick="obtenerTextoEncriptado(),desencriptador()">Desencriptar</button>
+        </div>
+
+        
+        
+        
+    
+    
+        <script src="encriptador.js" defer></script>
+    </div>
+</body>
+</html>
+
